@@ -52,21 +52,25 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Texto de boas-vindas com responsividade */
+/* Texto de boas-vindas */
 .welcome-text {
-  font-size: 36px;          /* Tamanho para desktop */
-  font-weight: 900;         /* negrito forte */
-  color: #fff;              /* cor branca */
+  font-size: 36px;          /* Tamanho maior no PC */
+  font-weight: 900;         /* Negrito forte */
+  color: #fff;              /* Cor branca */
   text-align: center;
   margin-bottom: 2rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* sombra mais forte para destacar */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Sombra mais forte para destacar */
 }
 
 /* Ajuste para telas menores */
 @media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;      /* Ajuste do título Cassio Vilacorta */
+  }
+
   .welcome-text {
-    font-size: 28px !important;      /* Reduzir o tamanho da fonte no mobile */
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* sombra mais suave */
+    font-size: 28px !important; /* Reduzido para mobile */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Sombra mais suave */
   }
 }
 
