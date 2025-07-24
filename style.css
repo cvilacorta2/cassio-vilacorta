@@ -43,26 +43,26 @@ body {
   text-align: center;
 }
 
-/* Título principal */
+/* Título principal (removido azul turquesa) */
 .hero-title {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 3rem;
-  color: #1de9b6; /* azul turquesa */
+  color: #fff; /* Título padrão em branco */
   text-shadow: 0 0 35px rgba(0, 0, 0, 0.8); /* sombra suave */
   margin-bottom: 1.5rem;
 }
 
-/* Texto de boas-vindas */
+/* Texto de boas-vindas em azul turquesa */
 .welcome-text {
   font-size: 36px;          /* Tamanho maior no PC */
   font-weight: 900;         /* Negrito forte */
-  color: #fff;              /* Cor branca */
+  color: #1de9b6;              /* Azul turquesa */
   text-align: center;
   margin-bottom: 2rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Sombra mais forte para destacar */
 }
 
-/* Ajuste para telas menores */
+/* Ajuste para telas menores (Mobile) */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;      /* Ajuste do título Cassio Vilacorta */
