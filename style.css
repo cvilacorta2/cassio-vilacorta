@@ -52,14 +52,22 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Texto de boas-vindas - 36px, negrito, branco */
+/* Texto de boas-vindas com responsividade */
 .welcome-text {
-  font-size: 48px;          /* 48px para maior destaque */
+  font-size: 36px;          /* Tamanho para desktop */
   font-weight: 900;         /* negrito forte */
   color: #fff;              /* cor branca */
   text-align: center;
   margin-bottom: 2rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* sombra mais forte para destacar */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 24px;      /* Reduzir o tamanho da fonte no mobile */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* sombra mais suave */
+  }
 }
 
 /* Caixa preta translúcida */
