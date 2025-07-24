@@ -65,7 +65,7 @@ body {
 /* Ajuste para telas menores */
 @media (max-width: 768px) {
   .welcome-text {
-    font-size: 24px;      /* Reduzir o tamanho da fonte no mobile */
+    font-size: 28px !important;      /* Reduzir o tamanho da fonte no mobile */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* sombra mais suave */
   }
 }
