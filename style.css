@@ -54,7 +54,7 @@ body {
 
 /* Texto de boas-vindas - 36px, negrito, branco */
 .welcome-text {
-  font-size: 48px;          /* 36px para maior destaque */
+  font-size: 48px;          /* 48px para maior destaque */
   font-weight: 900;         /* negrito forte */
   color: #fff;              /* cor branca */
   text-align: center;
