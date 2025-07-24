@@ -50,7 +50,7 @@ body {
 
 /* Texto de boas-vindas em azul turquesa */
 .welcome-text {
-  font-size: 36px;          /* Tamanho maior no PC */
+  font-size: 28px;          /* Tamanho reduzido */
   font-weight: 900;         /* Negrito forte */
   color: #1de9b6;              /* Azul turquesa */
   text-align: center;
@@ -61,7 +61,7 @@ body {
 /* Ajuste para telas menores (Mobile) */
 @media (max-width: 768px) {
   .welcome-text {
-    font-size: 28px !important; /* Reduzido para mobile */
+    font-size: 24px !important; /* Reduzido para mobile */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Sombra mais suave */
   }
 }
@@ -105,7 +105,4 @@ body {
 
 /* Seção do portfólio */
 #portfolio h2 {
-  font-size: 2rem;
-  color: #fff;
-  margin-bottom: 1.5rem;
-}
+  fon
