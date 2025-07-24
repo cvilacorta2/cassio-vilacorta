@@ -5,19 +5,51 @@
   box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
   font-family: 'Figtree', sans-serif;
   background-color: #000;
   color: #fff;
+  line-height: 1.6;
 }
 
-/* HERO SECTION */
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  padding: 1rem;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #1de9b6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+/* HERO */
 .hero {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-bg {
@@ -25,214 +57,137 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
-/* Conteúdo da hero */
 .hero-content {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 2rem;
-  text-align: center;
+  max-width: 800px;
 }
 
-/* Título principal (removido azul turquesa) */
-.hero-title {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 3rem;
-  color: #fff; /* Título padrão em branco */
-  text-shadow: 0 0 35px rgba(0, 0, 0, 0.8); /* sombra suave */
-  margin-bottom: 1.5rem;
-}
-
-/* Texto de boas-vindas em azul turquesa */
 .welcome-text {
-  font-size: 36px;          /* Tamanho maior no PC */
-  font-weight: 900;         /* Negrito forte */
-  color: #1de9b6;              /* Azul turquesa */
+  font-size: 28px;
+  font-weight: 700;
+  color: #1de9b6;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* BIOGRAFIA */
+#biografia {
+  padding: 80px 20px 40px;
+  background-color: #111;
   text-align: center;
-  margin-bottom: 2rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Sombra mais forte para destacar */
 }
 
-/* Ajuste para telas menores (Mobile) */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;      /* Ajuste do título Cassio Vilacorta */
-  }
-
-  .welcome-text {
-    font-size: 28px !important; /* Reduzido para mobile */
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Sombra mais suave */
-  }
-}
-
-/* Caixa preta translúcida */
-.hero-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 700px;
-  margin: 0 auto;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
-  text-align: justify;
-  color: #fff;
-}
-
-/* Texto dentro da caixa */
-.bio {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Botão de contato */
-.btn {
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #1de9b6;
-  color: #000;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #14cba3;
-  cursor: pointer;
-}
-
-/* Seção do portfólio */
-#portfolio h2 {
+#biografia h2 {
   font-size: 2rem;
-  color: #fff;
-  margin-bottom: 1.5rem;
-}
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin-bottom: 2rem;
 }
 
-/* Corpo da página */
-body {
-  font-family: 'Figtree', sans-serif;
-  background-color: #000;
-  color: #fff;
+.bio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
-/* HERO SECTION */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+.bio-item {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
-.hero-bg {
-  position: absolute;
+.bio-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  display: block;
 }
 
-/* Conteúdo da hero */
-.hero-content {
-  position: relative;
-  z-index: 1;
-  height: 100%;
+.bio-caption {
+  padding: 1rem;
+  text-align: left;
+}
+
+.bio-caption h3 {
+  font-size: 1rem;
+  color: #1de9b6;
+  margin-bottom: 0.5rem;
+}
+
+.bio-caption p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+/* AGENDA / TOUR */
+#tour {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+#tour h2 {
+  margin-bottom: 1rem;
+}
+
+/* MÍDIA */
+#midia {
+  padding: 60px 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+#midia h2 {
+  margin-bottom: 2rem;
+}
+
+.media-grid {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  gap: 2rem;
+}
+
+/* CONTATO */
+#contato {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+#contato h2 {
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
   padding: 2rem;
   text-align: center;
+  background-color: #111;
+  color: #888;
+  font-size: 14px;
 }
 
-/* Título principal (removido azul turquesa) */
-.hero-title {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 3rem;
-  color: #fff; /* Título padrão em branco */
-  text-shadow: 0 0 35px rgba(0, 0, 0, 0.8); /* sombra suave */
-  margin-bottom: 1.5rem;
-}
-
-/* Texto de boas-vindas em azul turquesa */
-.welcome-text {
-  font-size: 36px;          /* Tamanho maior no PC */
-  font-weight: 900;         /* Negrito forte */
-  color: #1de9b6;              /* Azul turquesa */
-  text-align: center;
-  margin-bottom: 2rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Sombra mais forte para destacar */
-}
-
-/* Ajuste para telas menores (Mobile) */
+/* RESPONSIVO */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;      /* Ajuste do título Cassio Vilacorta */
+  .bio-item {
+    width: 90%;
   }
 
   .welcome-text {
-    font-size: 28px !important; /* Reduzido para mobile */
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Sombra mais suave */
+    font-size: 22px;
   }
-}
 
-/* Caixa preta translúcida */
-.hero-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 700px;
-  margin: 0 auto;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
-  text-align: justify;
-  color: #fff;
-}
+  .media-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-/* Texto dentro da caixa */
-.bio {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Botão de contato */
-.btn {
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #1de9b6;
-  color: #000;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #14cba3;
-  cursor: pointer;
-}
-
-/* Seção do portfólio */
-#portfolio h2 {
-  font-size: 2rem;
-  color: #fff;
-  margin-bottom: 1.5rem;
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
