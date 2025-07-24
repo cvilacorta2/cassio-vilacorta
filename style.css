@@ -52,11 +52,11 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Texto de boas-vindas - maior e negrito reforçado */
+/* Texto de boas-vindas - 36px, negrito, branco */
 .welcome-text {
-  font-size: 24px;          /* maior e mais visível */
+  font-size: 36px;          /* 36px para maior destaque */
   font-weight: 900;         /* negrito forte */
-  color: #1de9b6;           /* azul turquesa */
+  color: #fff;              /* cor branca */
   text-align: center;
   margin-bottom: 2rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* sombra mais forte para destacar */
