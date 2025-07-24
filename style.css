@@ -52,29 +52,33 @@ body {
   margin-bottom: 1.5rem;
 }
 
+/* Texto de boas-vindas */
+.welcome-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1de9b6; /* azul turquesa */
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
 /* Caixa preta translúcida */
 .hero-box {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   padding: 2rem;
   max-width: 700px;
+  margin: 0 auto;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
-
-  /* texto justificado */
   text-align: justify;
+  color: #fff;
 }
 
-/* Textos dentro da caixa */
-.intro {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 1.2rem;
-}
-
+/* Texto dentro da caixa */
 .bio {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 /* Botão de contato */
@@ -100,31 +104,4 @@ body {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 1.5rem;
-}
-.welcome-text {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #1de9b6; /* azul turquesa */
-  text-align: center;
-  margin-bottom: 2rem;
-  text-shadow: 0 0 35px rgba(0, 0, 0, 0.8);
-}
-
-.hero-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 700px;
-  margin: 0 auto;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
-
-  /* Centraliza texto para leveza */
-  text-align: center;
-}
-
-.bio {
-  font-size: 1.1rem;
-  color: #fff;
-  line-height: 1.6;
-  margin-bottom: 1rem;
 }
