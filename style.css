@@ -43,14 +43,18 @@ body {
   text-align: center;
 }
 
-/* Título principal (removido "Cassio Vilacorta") */
+/* Título principal (removido azul turquesa) */
 .hero-title {
-  display: none; /* Removido completamente */
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 3rem;
+  color: #fff; /* Título padrão em branco */
+  text-shadow: 0 0 35px rgba(0, 0, 0, 0.8); /* sombra suave */
+  margin-bottom: 1.5rem;
 }
 
 /* Texto de boas-vindas em azul turquesa */
 .welcome-text {
-  font-size: 28px;          /* Tamanho reduzido */
+  font-size: 36px;          /* Tamanho maior no PC */
   font-weight: 900;         /* Negrito forte */
   color: #1de9b6;              /* Azul turquesa */
   text-align: center;
@@ -60,8 +64,131 @@ body {
 
 /* Ajuste para telas menores (Mobile) */
 @media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;      /* Ajuste do título Cassio Vilacorta */
+  }
+
   .welcome-text {
-    font-size: 24px !important; /* Reduzido para mobile */
+    font-size: 28px !important; /* Reduzido para mobile */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Sombra mais suave */
+  }
+}
+
+/* Caixa preta translúcida */
+.hero-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
+  text-align: justify;
+  color: #fff;
+}
+
+/* Texto dentro da caixa */
+.bio {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Botão de contato */
+.btn {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #1de9b6;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #14cba3;
+  cursor: pointer;
+}
+
+/* Seção do portfólio */
+#portfolio h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Conteúdo da hero */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Título principal (removido azul turquesa) */
+.hero-title {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 3rem;
+  color: #fff; /* Título padrão em branco */
+  text-shadow: 0 0 35px rgba(0, 0, 0, 0.8); /* sombra suave */
+  margin-bottom: 1.5rem;
+}
+
+/* Texto de boas-vindas em azul turquesa */
+.welcome-text {
+  font-size: 36px;          /* Tamanho maior no PC */
+  font-weight: 900;         /* Negrito forte */
+  color: #1de9b6;              /* Azul turquesa */
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Sombra mais forte para destacar */
+}
+
+/* Ajuste para telas menores (Mobile) */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;      /* Ajuste do título Cassio Vilacorta */
+  }
+
+  .welcome-text {
+    font-size: 28px !important; /* Reduzido para mobile */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Sombra mais suave */
   }
 }
