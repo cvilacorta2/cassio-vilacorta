@@ -77,3 +77,24 @@ h1#page-title img {
 }
 
 </style>
+ul.menu-length-3 {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ul.menu-length-3 li img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  filter: brightness(0) invert(1); /* deixa os ícones brancos se forem escuros */
+}
+
+ul.menu-length-3 li img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
