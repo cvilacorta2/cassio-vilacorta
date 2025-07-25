@@ -1,323 +1,35 @@
-element.style {
-}
 <style>
-#usersite-container #title-wrap h1#page-title.display-type-logo span, #usersite-container #title-wrap h1#page-title.display-type-logo span img {
-    width: 100%;
-}
-<style>
-h1#page-title.display-type-logo span, h1#page-title.display-type-logo img {
-    width: 100%;
-}
-<style>
-.not-intro-page #usersite-container, .not-intro-page #usersite-container * {
-    box-sizing: border-box;
-}
-#usersite-container img {
-    border: 0;
-}
-user agent stylesheet
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-#usersite-container h1.page-title span {
-    display: inline-block;
-    max-width: 100%;
-    word-break: break-word;
-    word-wrap: break-word;
-}
-<style>
-#usersite-container h1#page-title.display-type-logo span.outer, #usersite-container h1#page-title.display-type-none span.outer {
-    font-size: 0px;
-}
-<style>
-#usersite-container[data-theme-page-title-uppercase-boolean="0"] h1#page-title .outer {
-    text-transform: none;
-}
-<style>
-#usersite-container h1#page-title .outer {
-    font-family: var(--page-title-typeface-style-stack);
-    font-style: var(--page-title-typeface-style-font-style);
-    font-weight: var(--page-title-typeface-style-font-weight);
-    letter-spacing: var(--page-title-letterspacing-number);
-    font-size: var(--page-title-typeface-size-number);
-}
-<style>
-#page-title span.outer {
-    color: var(--page-title-color);
-}
-#usersite-container h1#page-title a, #usersite-container h1#page-title a:hover, #usersite-container h1#page-title a:focus, #usersite-container .layer-subtitle.layer a, #usersite-container .layer-subtitle.layer a:hover, #usersite-container .layer-subtitle.layer a:focus {
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    text-decoration: inherit;
-    text-transform: inherit;
-}
-<style>
-#usersite-container .text-main a, #usersite-container a:not(.btn-wiz), #usersite-container h1 a, #usersite-container h2 a, #usersite-container h3 a, #usersite-container h4 a, #usersite-container h5 a {
-    color: var(--link-color);
-}
-#usersite-container a {
-    color: inherit;
-    text-decoration: none;
-}
-user agent stylesheet
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-}
-<style>
-#usersite-container .text-main, #usersite-container h1, #usersite-container h2, #usersite-container h3, #usersite-container h4, #usersite-container h5 {
-    color: var(--text-color);
-}
-#usersite-container h1 {
-    font-size: 25px;
-    padding-bottom: 5px;
-}
-#usersite-container h1, #usersite-container h2, #usersite-container h3, #usersite-container h4, #usersite-container h5, #usersite-container h6, #usersite-container hgroup {
-    line-height: 1.1;
-    margin: 0.5em 0;
-}
-user agent stylesheet
-h1 {
-    font-size: 2em;
-    font-weight: bold;
-}
-<style>
-.not-intro-page #usersite-container:not(.mobile-view) .title-nav-container[multiple-line] .title-wrap, .not-intro-page #usersite-container:not(.mobile-view) .title-nav-container.multiple-line .title-wrap {
-    width: 100%;
-    text-align: center;
-}
-#usersite-container .has-section-styles {
-    --section-padding-x-small: 24px;
-    --section-padding-small: 64px;
-    --section-padding-medium: 96px;
-    --section-padding-large: 120px;
-    --section-padding-x-large: 220px;
-}
-.website-page-news {
-    --first-row-background-color: var(--page-background-color);
-}
-<style>
-#usersite-container[data-theme-content-uppercase-boolean="0"]:not(.button), #usersite-container[data-theme-content-uppercase-boolean="0"] button:not(.button), #usersite-container[data-theme-content-uppercase-boolean="0"] input:not(.button), #usersite-container[data-theme-content-uppercase-boolean="0"] legend:not(.button), #usersite-container[data-theme-content-uppercase-boolean="0"] textarea:not(.button) {
-    text-transform: none;
-}
-<style>
-#usersite-container, #usersite-container button, #usersite-container input, #usersite-container legend, #usersite-container textarea {
-    font-family: var(--content-typeface-style-stack);
-    font-style: var(--content-typeface-style-font-style);
-    font-weight: var(--content-typeface-style-font-weight);
-    font-size: var(--content-typeface-size-number);
-    line-height: 1.5;
-}
-<style>
-#usersite-container, #usersite-container button, #usersite-container legend {
-    color: var(--text-color);
-}
-#usersite-container {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: none;
-}
-<style>
-@container style(--support-style-query-check: 1) {
-    body {
-        --supports-style-queries: 1;
-    }
-}
-<style>
-@media (min-width: 760px) {
-    :root {
-        --cart-summary-width: 375px;
-    }
-}
-<style>
+/* Garante que o logo use a imagem personalizada como fundo (caso esteja ativa) */
 :root {
-    --cart-summary-width: 100vw;
-    --cart-summary-bottom: 0;
+  --page-title-logo-background-image: url("images/logos/cassio-vilacorta-logo.png");
 }
-<style>
-:root {
-    --cart-badge-right: 0;
-    --cart-badge-bottom: 20px;
-    --cart-badge-background-hsl: var(--button-color-h), calc(var(--button-color-s) * 1%), calc(var(--button-color-l) * 1%);
-    --cart-badge-background: hsla(var(--cart-badge-background-hsl), 1);
-    --cart-badge-foreground-hsl: var(--button-color-h), calc(var(--button-color-s) * 1%), clamp(0%, (var(--button-color-l) - 75) * -100%, 100%);
-    --cart-badge-foreground: hsla(var(--cart-badge-foreground-hsl), var(--button-color-a));
+
+/* Aumenta a altura do container do logo */
+.not-intro-page #usersite-container h1#page-title.display-type-logo {
+  height: auto;
+  min-height: 220px;
 }
-:root {
-    --theme-config-version: "theme_configs/635087-20250627114031000000";
-    --text-color: hsl(0, 0%, 100%);
-    --text-color-hsl: 0, 0%, 100%;
-    --text-color-h: 0;
-    --text-color-s: 0;
-    --text-color-l: 100;
-    --text-color-a: 1.0;
-    --link-color: hsl(0, 0%, 44%);
-    --link-color-hsl: 0, 0%, 44%;
-    --link-color-h: 0;
-    --link-color-s: 0;
-    --link-color-l: 44;
-    --link-color-a: 1.0;
-    --feature-title-color: hsl(0, 0%, 44%);
-    --feature-title-color-hsl: 0, 0%, 44%;
-    --feature-title-color-h: 0;
-    --feature-title-color-s: 0;
-    --feature-title-color-l: 44;
-    --feature-title-color-a: 1.0;
-    --nav-link-color: hsl(0, 0%, 100%);
-    --nav-link-color-hsl: 0, 0%, 100%;
-    --nav-link-color-h: 0;
-    --nav-link-color-s: 0;
-    --nav-link-color-l: 100;
-    --nav-link-color-a: 1.0;
-    --nav-link-rollover-color: hsl(0, 0%, 55%);
-    --nav-link-rollover-color-hsl: 0, 0%, 55%;
-    --nav-link-rollover-color-h: 0;
-    --nav-link-rollover-color-s: 0;
-    --nav-link-rollover-color-l: 55;
-    --nav-link-rollover-color-a: 1.0;
-    --sub-menu-background-color: hsl(0, 0%, 9%);
-    --sub-menu-background-color-hsl: 0, 0%, 9%;
-    --sub-menu-background-color-h: 0;
-    --sub-menu-background-color-s: 0;
-    --sub-menu-background-color-l: 9;
-    --sub-menu-background-color-a: 1.0;
-    --sub-menu-link-color: hsl(0, 0%, 100%);
-    --sub-menu-link-color-hsl: 0, 0%, 100%;
-    --sub-menu-link-color-h: 0;
-    --sub-menu-link-color-s: 0;
-    --sub-menu-link-color-l: 100;
-    --sub-menu-link-color-a: 1.0;
-    --page-title-color: hsl(0, 0%, 0%);
-    --page-title-color-hsl: 0, 0%, 0%;
-    --page-title-color-h: 0;
-    --page-title-color-s: 0;
-    --page-title-color-l: 0;
-    --page-title-color-a: 1.0;
-    --swmp-use-custom-colors-boolean: true;
-Show all properties (267 more)
+
+/* Remove limitação de largura e deixa a imagem livre */
+#usersite-container #title-wrap h1#page-title.display-type-logo span,
+#usersite-container #title-wrap h1#page-title.display-type-logo span img,
+h1#page-title.display-type-logo span,
+h1#page-title.display-type-logo img {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  max-height: none !important;
+  display: inline-block;
 }
-<style>
-:root {
-    --view-site-bar-height: 56px;
+
+/* Estiliza diretamente a imagem do logo */
+h1#page-title img {
+  width: 500px !important;
+  height: auto !important;
 }
-<style>
-:root {
-    --mobile-header-height-number: var(--mobile-header-height-number-unitless);
-    --use-custom-mobile-header-height: var(--use-custom-mobile-header-height-boolean);
+
+/* Garante que não haverá colapso de tamanho por font-size zero */
+#usersite-container h1#page-title.display-type-logo span.outer {
+  font-size: inherit !important;
 }
-<style>
-:root {
-    --auto-colors-highlight: var(--link-color);
-    --auto-colors-highlight-text-hsl: var(--link-color-h), calc(var(--link-color-s) * 1%), clamp(0%, (var(--link-color-l) - 75) * -100%, 100%);
-    --auto-colors-highlight-text: hsla(var(--auto-colors-highlight-text-hsl), var(--link-color-a));
-    --auto-colors-accent-hsl: var(--text-color-h), calc(var(--text-color-s) * 1%), calc(var(--text-color-l) * 1%);
-    --auto-colors-accent: hsla(var(--auto-colors-accent-hsl), .2);
-    --auto-colors-accent-heavy-hsl: var(--text-color-h), calc(var(--text-color-s) * 1%), calc(var(--text-color-l) * 1%);
-    --auto-colors-accent-heavy: hsla(var(--auto-colors-accent-heavy-hsl), .5);
-    --auto-colors-accent-dark-hsl: var(--text-color-h), calc(var(--text-color-s) * 1%), calc(var(--text-color-l) * 1%);
-    --auto-colors-accent-dark: hsla(var(--auto-colors-accent-dark-hsl), .35);
-    --auto-colors-accent-half-hsl: var(--text-color-h), calc(var(--text-color-s) * 1%), calc(var(--text-color-l) * 1%);
-    --auto-colors-accent-half: hsla(var(--auto-colors-accent-half-hsl), .1);
-    --auto-colors-accent-slight-hsl: var(--text-color-h), calc(var(--text-color-s) * 1%), calc(var(--text-color-l) * 1%);
-    --auto-colors-accent-slight: hsla(var(--auto-colors-accent-slight-hsl), .05);
-    --auto-colors-text-tertiary-hsl: var(--text-color-h), calc(var(--text-color-s) * 1%), calc(var(--text-color-l) * 1%);
-    --auto-colors-text-tertiary: hsla(var(--auto-colors-text-tertiary-hsl), .5);
-}
-:root {
-    --swmp-height: 55px;
-    --z-index-swmp: 9998;
-}
-<style>
-html {
-    --support-style-query-check: 1;
-}
-<style>
-:where(html) {
-    --media-shape-stretched: var(--shape-stretched-on);
-}
-<style>
-:where(html) {
-    --size-2xs: .125rem;
-    --size-xs: .25rem;
-    --size-s: .5rem;
-    --size-m: 1rem;
-    --size-l: 1.5rem;
-    --size-xl: 2rem;
-    --size-2xl: 3rem;
-    --size-3xl: 4rem;
-    --size-4xl: 5.5rem;
-    --size-relative-m: 1em;
-}
-<style>
-:where(html) {
-    --shape-stretched-off: initial;
-    --shape-stretched-on: ;
-    --shape-stretched: var(--shape-stretched-on);
-    --shape-none: initial;
-}
-<style>
-:where(html) {
-    --ratio-none: auto;
-    --ratio-square: 1 / 1;
-    --ratio-widescreen: 16 / 9;
-    --ratio-landscape: 4 / 3;
-    --ratio-portrait: 3 / 4;
-    --ratio-portrait-large: 9 / 16;
-}
-<style>
-:where(html) {
-    --border-size-0: 0;
-    --border-size-1: 1px;
-    --border-size-2: 2px;
-    --border-size-3: 4px;
-    --border-size-4: 8px;
-    --border-size-5: 16px;
-    --border-size-6: 32px;
-    --border-style-none: none;
-    --border-style-solid: solid;
-    --border-style-dashed: dashed;
-    --border-style-dotted: dotted;
-    --border-style-double: double;
-    --border-style-groove: groove;
-    --border-style-ridge: ridge;
-    --border-style-inset: inset;
-    --border-style-outset: outset;
-    --border-radius-0: 0;
-    --border-radius-1: 8px;
-    --border-radius-2: 16px;
-    --border-radius-3: 32px;
-    --border-radius-4: 48px;
-    --border-radius-5: 64px;
-    --border-radius-none: var(--border-radius-0);
-    --border-radius-s: var(--border-radius-1);
-    --border-radius-m: var(--border-radius-2);
-    --border-radius-l: var(--border-radius-3);
-    --border-radius-xl: var(--border-radius-4);
-    --border-radius-xxl: var(--border-radius-5);
-    --border-radius-circle: 50%;
-    --border-radius-pill: 9999px;
-    --border-radius-blob-1: 30% 70% 70% 30% / 53% 30% 70% 47%;
-    --border-radius-blob-2: 53% 47% 34% 66% / 63% 46% 54% 37%;
-    --border-radius-blob-3: 37% 63% 56% 44% / 49% 56% 44% 51%;
-    --border-radius-blob-4: 63% 37% 37% 63% / 43% 37% 63% 57%;
-    --border-radius-blob-5: 49% 51% 48% 52% / 57% 44% 56% 43%;
-    --border-radius-dome-south: var(--border-radius-1) var(--border-radius-1) var(--border-radius-3) var(--border-radius-3);
-    --border-radius-dome-north: var(--border-radius-3) var(--border-radius-3) var(--border-radius-1) var(--border-radius-1);
-    --border-radius-dome-east: var(--border-radius-1) var(--border-radius-3) var(--border-radius-3) var(--border-radius-1);
-    --border-radius-dome-west: var(--border-radius-3) var(--border-radius-1) var(--border-radius-1) var(--border-radius-3);
-    --border-radius-mix-t: var(--border-radius-3) var(--border-radius-3) 0 0;
-    --border-radius-mix-r: 0 var(--border-radius-3) var(--border-radius-3) 0;
-    --border-radius-mix-b: 0 0 var(--border-radius-3) var(--border-radius-3);
-    --border-radius-mix-l: var(--border-radius-3) 0 0 var(--border-radius-3);
-    --border-radius-mix-tr-bl: 0 var(--border-radius-3);
-    --border-radius-mix-tl-br: var(--border-radius-3) 0;
-    --border-radius-mix-tl: var(--border-radius-3) 0 0 0;
-    --border-radius-mix-tr: 0 var(--border-radius-3) 0 0;
-    --border-radius-mix-br: 0 0 var(--border-radius-3) 0;
-    --border-radius-mix-bl: 0 0 0 var(--border-radius-3);
-    --border-radius-drop-tr: var(--border-radius-3) 0 var(--border-radius-3) var(--border-radius-3);
-Show all properties (3 more)
-}
+</style>
