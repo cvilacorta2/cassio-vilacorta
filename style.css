@@ -56,16 +56,20 @@ h1#page-title img {
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-height: 600px;
+  height: 100vh;
   overflow: hidden;
+  z-index: -1;
 }
 
 .slideshow-slide {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  animation: fade 18s infinite;
+  height: 100%;
+  object-fit: cover;
   opacity: 0;
+  animation: fade 18s infinite;
   transition: opacity 1s ease-in-out;
 }
 
