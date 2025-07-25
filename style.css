@@ -1,60 +1,20 @@
+
 :root {
   --page-title-logo-background-image: url("images/logos/cassio-vilacorta-logo.png");
 }
 
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Figtree', sans-serif;
+  margin: 0;
   background-color: #000;
   color: #fff;
 }
 
-/* === LOGO PRINCIPAL === */
-.not-intro-page #usersite-container h1#page-title.display-type-logo {
-  height: auto !important;
-  min-height: 300px !important;
-  padding: 50px 0 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#usersite-container h1#page-title.display-type-logo span.outer,
-#usersite-container h1#page-title.display-type-logo span.inner {
-  display: block !important;
-  font-size: inherit !important;
-  width: auto !important;
-  height: auto !important;
-}
-
-#usersite-container #title-wrap h1#page-title.display-type-logo span,
-#usersite-container #title-wrap h1#page-title.display-type-logo span img,
-h1#page-title.display-type-logo span,
-h1#page-title.display-type-logo img {
-  width: auto !important;
-  max-width: none !important;
-  height: auto !important;
-  max-height: none !important;
-  display: inline-block !important;
-}
-
-h1#page-title img {
-  width: 900px !important;
-  max-width: 100%;
-  height: auto !important;
-  display: block;
-  margin: 0 auto;
-}
-
-/* === SLIDESHOW DE IMAGENS === */
+/* Slideshow */
 .slideshow-container {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -63,8 +23,6 @@ h1#page-title img {
 
 .slideshow-slide {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -85,106 +43,28 @@ h1#page-title img {
   100% { opacity: 0; }
 }
 
-/* === HERO SECTION COM TEXTO === */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.hero-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
+/* Conteúdo da página */
 .hero-content {
   position: relative;
   z-index: 1;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
 }
 
 .welcome-text {
   font-size: 28px;
   font-weight: 900;
   color: #1de9b6;
-  text-align: center;
-  margin-bottom: 2rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 @media (max-width: 768px) {
   .welcome-text {
-    font-size: 24px !important;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-  }
-}
-
-/* === BOTÃO DE CONTATO === */
-.btn {
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #1de9b6;
-  color: #000;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #14cba3;
-  cursor: pointer;
-}
-
-/* === PORTFÓLIO / SEÇÃO CENTRAL === */
-#portfolio h2 {
-  font-size: 2rem;
-  color: #fff;
-  margin-bottom: 1.5rem;
-}
-
-/* === ÍCONES SOCIAIS - NAV-BAR === */
-.nav-bar,
-.nav-bar.mobile {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 40px 0;
-}
-
-.nav-bar a img {
-  width: 40px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.nav-bar a img:hover {
-  transform: scale(1.1);
-}
-
-/* === RESPONSIVO === */
-@media (max-width: 600px) {
-  .nav-bar,
-  .nav-bar.mobile {
-    gap: 16px;
-    margin: 20px 0;
-  }
-
-  .nav-bar a img {
-    width: 32px;
+    font-size: 24px;
   }
 }
