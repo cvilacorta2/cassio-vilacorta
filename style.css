@@ -1,3 +1,7 @@
+:root {
+  --page-title-logo-background-image: url("images/logos/cassio-vilacorta-logo.png");
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -5,14 +9,85 @@
   box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
   font-family: 'Figtree', sans-serif;
   background-color: #000;
   color: #fff;
 }
 
-/* HERO SECTION */
+/* === LOGO PRINCIPAL === */
+.not-intro-page #usersite-container h1#page-title.display-type-logo {
+  height: auto !important;
+  min-height: 300px !important;
+  padding: 50px 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#usersite-container h1#page-title.display-type-logo span.outer,
+#usersite-container h1#page-title.display-type-logo span.inner {
+  display: block !important;
+  font-size: inherit !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+#usersite-container #title-wrap h1#page-title.display-type-logo span,
+#usersite-container #title-wrap h1#page-title.display-type-logo span img,
+h1#page-title.display-type-logo span,
+h1#page-title.display-type-logo img {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  max-height: none !important;
+  display: inline-block !important;
+}
+
+h1#page-title img {
+  width: 900px !important;
+  max-width: 100%;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === SLIDESHOW DE IMAGENS === */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.slideshow-slide {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  animation: fade 18s infinite;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow-slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.slideshow-slide:nth-child(2) {
+  animation-delay: 6s;
+}
+.slideshow-slide:nth-child(3) {
+  animation-delay: 12s;
+}
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  30%  { opacity: 1; }
+  35%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* === HERO SECTION COM TEXTO === */
 .hero {
   position: relative;
   width: 100%;
@@ -30,7 +105,6 @@ body {
   z-index: -1;
 }
 
-/* Conteúdo da hero */
 .hero-content {
   position: relative;
   z-index: 1;
@@ -43,7 +117,6 @@ body {
   text-align: center;
 }
 
-/* Texto de boas-vindas */
 .welcome-text {
   font-size: 28px;
   font-weight: 900;
@@ -53,7 +126,6 @@ body {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
-/* Ajuste mobile */
 @media (max-width: 768px) {
   .welcome-text {
     font-size: 24px !important;
@@ -61,26 +133,7 @@ body {
   }
 }
 
-/* Caixa preta translúcida */
-.hero-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 700px;
-  margin: 0 auto;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.35);
-  text-align: justify;
-  color: #fff;
-}
-
-/* Texto dentro da caixa */
-.bio {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Botão de contato */
+/* === BOTÃO DE CONTATO === */
 .btn {
   margin-top: 2rem;
   padding: 0.75rem 1.5rem;
@@ -98,14 +151,14 @@ body {
   cursor: pointer;
 }
 
-/* Seção do portfólio */
+/* === PORTFÓLIO / SEÇÃO CENTRAL === */
 #portfolio h2 {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 1.5rem;
 }
 
-/* ====== Ícones sociais (menu) ====== */
+/* === ÍCONES SOCIAIS FIXOS (Instagram, YouTube, Spotify) === */
 ul.menu-length-3 {
   display: flex;
   justify-content: center;
@@ -122,7 +175,7 @@ ul.menu-length-3 li img {
   max-width: 32px;
   height: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  filter: brightness(0) invert(1); /* deixa branco se ícone for escuro */
+  filter: brightness(0) invert(1);
 }
 
 ul.menu-length-3 li img:hover {
@@ -130,7 +183,6 @@ ul.menu-length-3 li img:hover {
   opacity: 0.8;
 }
 
-/* Ajuste mobile para ícones */
 @media (max-width: 600px) {
   ul.menu-length-3 {
     gap: 16px;
