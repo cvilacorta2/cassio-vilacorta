@@ -1,16 +1,28 @@
 <style>
-/* Garante que o logo use a imagem personalizada como fundo (caso esteja ativa) */
 :root {
   --page-title-logo-background-image: url("images/logos/cassio-vilacorta-logo.png");
 }
 
-/* Aumenta a altura do container do logo */
+/* Aumenta a área do container do logo */
 .not-intro-page #usersite-container h1#page-title.display-type-logo {
-  height: auto;
-  min-height: 220px;
+  height: auto !important;
+  min-height: 300px !important;
+  padding: 50px 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Remove limitação de largura e deixa a imagem livre */
+/* Garante que o span e imagem não limitem o tamanho */
+#usersite-container h1#page-title.display-type-logo span.outer,
+#usersite-container h1#page-title.display-type-logo span.inner {
+  display: block !important;
+  font-size: inherit !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Remove limitação de largura da imagem */
 #usersite-container #title-wrap h1#page-title.display-type-logo span,
 #usersite-container #title-wrap h1#page-title.display-type-logo span img,
 h1#page-title.display-type-logo span,
@@ -19,17 +31,15 @@ h1#page-title.display-type-logo img {
   max-width: none !important;
   height: auto !important;
   max-height: none !important;
-  display: inline-block;
+  display: inline-block !important;
 }
 
-/* Estiliza diretamente a imagem do logo */
+/* Estilo direto para o logo */
 h1#page-title img {
   width: 900px !important;
+  max-width: 100%;
   height: auto !important;
-}
-
-/* Garante que não haverá colapso de tamanho por font-size zero */
-#usersite-container h1#page-title.display-type-logo span.outer {
-  font-size: inherit !important;
+  display: block;
+  margin: 0 auto;
 }
 </style>
