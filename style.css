@@ -201,3 +201,22 @@ ul.menu-length-3 li img:hover {
     height: 28px;
   }
 }
+/* Estilo para os ícones sociais na nav-bar */
+.nav-bar,
+.nav-bar.mobile {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.nav-bar a img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.nav-bar a img:hover {
+  transform: scale(1.1);
+}
