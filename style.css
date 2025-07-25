@@ -158,7 +158,7 @@ h1#page-title img {
   margin-bottom: 1.5rem;
 }
 
-/* === ÍCONES SOCIAIS FIXOS (Instagram, YouTube, Spotify) === */
+/* === ÍCONES SOCIAIS (Instagram, YouTube, Spotify) === */
 ul.menu-length-3 {
   display: flex;
   justify-content: center;
@@ -171,9 +171,9 @@ ul.menu-length-3 {
 }
 
 ul.menu-length-3 li img {
-  width: 8vw;
-  max-width: 32px;
-  height: auto;
+  width: 32px;
+  height: 32px;
+  max-width: 100%;
   transition: transform 0.3s ease, opacity 0.3s ease;
   filter: brightness(0) invert(1);
 }
@@ -190,7 +190,7 @@ ul.menu-length-3 li img:hover {
   }
 
   ul.menu-length-3 li img {
-    width: 11vw;
-    max-width: 28px;
+    width: 28px;
+    height: 28px;
   }
 }
