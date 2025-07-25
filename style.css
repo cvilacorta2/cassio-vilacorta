@@ -183,6 +183,18 @@ ul.menu-length-3 li img:hover {
     gap: 16px;
     margin-top: 10px;
   }
+.nav-bar,
+.nav-bar.mobile {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-bar a img {
+  width: 40px;
+  height: auto;
+}
 
   ul.menu-length-3 li img {
     width: 28px;
