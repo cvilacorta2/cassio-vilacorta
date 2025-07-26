@@ -3,70 +3,31 @@
   --page-title-logo-background-image: url("images/logos/cassio-vilacorta-logo.png");
 }
 
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Figtree', sans-serif;
+  margin: 0;
   background-color: #000;
   color: #fff;
 }
 
-/* === LOGO PRINCIPAL === */
-.not-intro-page #usersite-container h1#page-title.display-type-logo {
-  height: auto !important;
-  min-height: 300px !important;
-  padding: 50px 0 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#usersite-container h1#page-title.display-type-logo span.outer,
-#usersite-container h1#page-title.display-type-logo span.inner {
-  display: block !important;
-  font-size: inherit !important;
-  width: auto !important;
-  height: auto !important;
-}
-
-#usersite-container #title-wrap h1#page-title.display-type-logo span,
-#usersite-container #title-wrap h1#page-title.display-type-logo span img,
-h1#page-title.display-type-logo span,
-h1#page-title.display-type-logo img {
-  width: auto !important;
-  max-width: none !important;
-  height: auto !important;
-  max-height: none !important;
-  display: inline-block !important;
-}
-
-h1#page-title img {
-  width: 900px !important;
-  max-width: 100%;
-  height: auto !important;
-  display: block;
-  margin: 0 auto;
-}
-
-/* === SLIDESHOW DE IMAGENS === */
+/* Slideshow */
 .slideshow-container {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-height: 600px;
+  height: 100vh;
   overflow: hidden;
+  z-index: -1;
 }
 
 .slideshow-slide {
   position: absolute;
   width: 100%;
-  height: auto;
-  animation: fade 18s infinite;
+  height: 100%;
+  object-fit: cover;
   opacity: 0;
+  animation: fade 18s infinite;
   transition: opacity 1s ease-in-out;
 }
 
@@ -82,122 +43,28 @@ h1#page-title img {
   100% { opacity: 0; }
 }
 
-/* === HERO SECTION COM TEXTO === */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.hero-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
+/* Conteúdo da página */
 .hero-content {
   position: relative;
   z-index: 1;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
 }
 
 .welcome-text {
   font-size: 28px;
   font-weight: 900;
   color: #1de9b6;
-  text-align: center;
-  margin-bottom: 2rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 @media (max-width: 768px) {
   .welcome-text {
-    font-size: 24px !important;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-  }
-}
-
-/* === BOTÃO DE CONTATO === */
-.btn {
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #1de9b6;
-  color: #000;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #14cba3;
-  cursor: pointer;
-}
-
-/* === PORTFÓLIO / SEÇÃO CENTRAL === */
-#portfolio h2 {
-  font-size: 2rem;
-  color: #fff;
-  margin-bottom: 1.5rem;
-}
-
-/* === ÍCONES SOCIAIS === */
-ul.menu-length-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-  flex-wrap: wrap;
-}
-
-ul.menu-length-3 li img {
-  width: 32px;
-  height: 32px;
-  max-width: 100%;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  filter: brightness(0) invert(1);
-}
-
-ul.menu-length-3 li img:hover {
-  transform: scale(1.2);
-  opacity: 0.8;
-}
-
-@media (max-width: 600px) {
-  ul.menu-length-3 {
-    gap: 16px;
-    margin-top: 10px;
-  }
-.nav-bar,
-.nav-bar.mobile {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.nav-bar a img {
-  width: 40px;
-  height: auto;
-}
-
-  ul.menu-length-3 li img {
-    width: 28px;
-    height: 28px;
+    font-size: 24px;
   }
 }
